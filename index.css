@@ -130,3 +130,8 @@ div > span {
   background-position: right;
   background-position-y: 130%;
 }
+
+a {
+  text-decoration: none;
+  padding: 0;
+}
