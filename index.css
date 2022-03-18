@@ -49,6 +49,7 @@ div,
 section {
   color: white;
   font-family: 'Crete Round', serif;
+  width: 100vw;
 }
 
 h3 {
@@ -145,19 +146,59 @@ li {
 .flex-sections {
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 .projects-grid {
   justify-self: center;
-  width: 100vw;
+  width: 375px;
   display: grid;
   grid-template-columns: auto;
+  height: auto;
+  list-style: circle;
 }
 
 .projects-grid > * {
   text-align: center;
   color: black;
-  padding: 10px;
   background-color: transparent;
-  height: 650px;
+  height: 682px;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  padding: 0%;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0%;
+}
+
+.recent-works {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  width: max-content;
+  height: 97px;
+  border-bottom: 1px solid rgb(21, 21, 21);
+  line-height: 52px;
+}
+
+.recent-works-outer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 120px 0%;
+  justify-content: center;
+}
+
+section.content {
+  width: 100vw;
+}
+
+ul.projects-grid {
+  margin: 0%;
+  padding: 0%;
 }
