@@ -116,7 +116,8 @@ div > span {
   width: inherit;
   width: 60%;
   margin: 2vh;
-  margin-left: -100px;
+  margin-top: 0vh;
+  margin-left: -30vw;
 }
 
 .content {
@@ -134,4 +135,9 @@ div > span {
 a {
   text-decoration: none;
   padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
 }
