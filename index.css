@@ -237,7 +237,6 @@ ul.projects-grid {
   margin: 0%;
   padding: 0%;
   width: 100%;
-  height: calc(auto + 108px);
 }
 
 h2.recent-works-outer {
@@ -276,14 +275,10 @@ h2.recent-works-outer {
 .language-btns-container {
   display: flex;
   padding: 0%;
-  min-width: 200px;
+  min-width: 327px;
   width: 87.2vw;
   margin: 12px 0%;
 }
-
-/* .language-btns-container > li {
-  margin: 0%;
-} */
 
 .language-btn {
   padding: 10px 12px;
@@ -312,7 +307,9 @@ h2.recent-works-outer {
 }
 
 li.grid-item > a.see-project-outer {
-  width: 327px;
+  min-width: 327px;
+  width: 87.2vw;
+  margin: 0% 12px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
