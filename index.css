@@ -184,19 +184,23 @@ li {
 
 .grid-item-generic {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0%;
-  height: auto;
-  margin: 12px;
+  margin: 12px 24px;
+  min-height: 386px;
+  background-image: url("Icons/img-placeholder2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .multi-post-stories {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0% 12px 12px 12px;
+  margin: 0% 12px 0% 12px;
 }
 
 .recent-works {
@@ -313,4 +317,77 @@ li.grid-item > a.see-project-outer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+li.grid-item-generic > a.see-project-outer-generic {
+  min-width: 327px;
+  width: 327px;
+  height: 48px;
+  background-color: #ff6b00;
+  position: relative;
+  bottom: -50px;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+}
+
+a.see-project-outer-generic > * {
+  margin: 0%;
+  width: 100%;
+}
+
+.project-title {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+  text-align: left;
+  height: 81px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  min-width: 295px;
+}
+
+.grid-item-generic > .project-info {
+  display: flex;
+}
+
+.project-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  text-align: left;
+  margin: 12px auto;
+  height: 87px;
+}
+
+h3.project-title {
+  margin: auto 0%;
+}
+
+.btn-generic {
+  background-color: rgb(255, 255, 255, 0.24);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+}
+
+.language-btns-container-generic {
+  display: flex;
+  padding: 0%;
+  min-width: 295px;
+  width: 295px;
+  margin: 12px 0%;
 }
