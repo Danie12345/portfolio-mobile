@@ -139,6 +139,7 @@ div > span {
 a {
   text-decoration: none;
   padding: 0;
+  color: inherit;
 }
 
 ul,
@@ -336,6 +337,17 @@ a.see-project-outer-generic > * {
   width: 100%;
 }
 
+div.see-project-outer {
+  display: block;
+  width: 87.2%;
+  justify-content: left;
+  background-color: transparent;
+}
+
+div.see-project > * {
+  width: 137px;
+}
+
 .project-title {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
@@ -394,4 +406,163 @@ h3.project-title {
 
 .no-project {
   height: 108px;
+}
+
+li > section.about-me {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+section.about-me > * {
+  margin: 12px 0%;
+  justify-content: center;
+}
+
+* .about-me {
+  width: 100vw;
+  display: flex;
+}
+
+.h2-about-me {
+  color: #ff6b00;
+  height: auto;
+  min-height: 79px;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  text-align: left;
+}
+
+section.about-me > .h2-about-me {
+  margin-top: 120px;
+}
+
+.about-me-text {
+  height: auto;
+  width: 87.2%;
+  margin: calc(12px + 2px) 0%;
+  text-align: start;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.decorative-background2 {
+  margin: 0%;
+  min-height: 300%;
+  background-color: #1c1a19;
+  background-image: url("Icons/background-shapes2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: calc(370px - calc(160vw / 16));
+}
+
+.get-resume {
+  float: left;
+  max-width: 137px;
+  min-width: 137px;
+}
+
+* > .get-resume {
+  width: 87.2vw;
+}
+
+hr {
+  min-width: 87.2%;
+  border: 1px solid white;
+}
+
+section.about-me > div.empty-space {
+  margin: 70.4px 0%;
+}
+
+section.about-me > div.empty-space2 {
+  margin: 54px 0%;
+}
+
+section.about-me-knowledge {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+div.knowledge,
+ul.knowledge {
+  padding: 0%;
+  margin-bottom: 32px;
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+}
+
+.h3-about-me {
+  font-family: 'InaiMathi', sans-serif;
+  font-size: 32px;
+  width: 299px;
+  align-self: center;
+  align-items: center;
+}
+
+.floated-bullet {
+  max-height: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  min-width: 18px;
+  background-color: #ff6b00;
+  position: relative;
+  transform: translateY(8px);
+}
+
+.bullet1 {
+  transform: rotate(45deg) translateY(10px);
+  left: 20%;
+}
+
+.bullet2 {
+  left: 15%;
+}
+
+.bullet3 {
+  border-radius: 50%;
+  left: 30%;
+}
+
+.h3-about-me-outer {
+  width: auto;
+  margin: 0%;
+  display: flex;
+}
+
+ul.knowledge > li {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  margin: 16px 0%;
+  padding: 0%;
+  align-items: center;
+}
+
+li > span.language {
+  font-family: 'Inaimathi', sans-serif;
+  font-size: 44px;
+  font-weight: 400;
 }
