@@ -102,7 +102,7 @@ div > span {
   width: 100vw;
   margin: 0%;
   height: 15.6vh;
-  min-height: 100px;
+  min-height: 80px;
   max-height: 144px;
 }
 
@@ -223,15 +223,15 @@ li {
 .recent-works-outer {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: calc(304px - 240px);
   margin: 120px 0%;
   padding: 0%;
   justify-content: center;
 }
 
 section.content {
-  min-height: 670px;
-  height: 670px;
+  min-height: 590px;
+  height: 590px;
   min-width: 375px;
   width: 100vw;
   margin: 0%;
@@ -390,4 +390,8 @@ h3.project-title {
   min-width: 295px;
   width: 295px;
   margin: 12px 0%;
+}
+
+.no-project {
+  height: 108px;
 }
