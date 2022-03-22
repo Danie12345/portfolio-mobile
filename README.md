@@ -28,6 +28,7 @@ Open files directly from the main directory.
 ## Contributions
 
 - Shingirai Bhengesa: @ShingiraiBhengesa
+- Mahmoud Makhlouf: @devMahmoud
 
 
 ## 📝 License
