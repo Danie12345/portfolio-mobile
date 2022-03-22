@@ -25,6 +25,10 @@ Open files directly from the main directory.
 
 - GitHub: [@githubhandle](https://github.com/Danie12345)
 
+## Contributions
+
+- Shingirai Bhengesa: @ShingiraiBhengesa
+
 
 ## 📝 License
 
