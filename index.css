@@ -696,6 +696,6 @@ div.form-child {
   width: 35.7333%;
   position: relative;
   bottom: -20px;
-  left: calc(50% - 35.7333%/2);
+  left: calc(50% - 35.7333% / 2);
   border-radius: 10px;
 }
