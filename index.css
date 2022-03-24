@@ -752,14 +752,16 @@ div.form-child {
 
   /* Headline */
   .content {
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: calc(100vh - 72px);
   }
 
   .content > * {
     display: flex;
     flex-direction: column;
+    padding-left: 9.930555%;
   }
 
   .decorative-background {
@@ -779,7 +781,7 @@ div.form-child {
   h1 {
     font-size: 72px;
     line-height: 82px;
-    margin: 12px auto;
+    margin: 12px 0%;
   }
 
   .h3-first {
@@ -788,7 +790,7 @@ div.form-child {
     font-weight: 500;
     width: 100%;
     margin: 0%;
-    margin: 12px auto;
+    margin: 12px 0%;
   }
 
   .self-intro {
@@ -797,12 +799,24 @@ div.form-child {
     font-weight: 400;
     width: 100%;
     margin: 0%;
-    margin: 12px auto;
+    margin: 12px 0%;
   }
 
   .article-icons {
     position: relative;
-    /* float: left; */
+    /* left: -10%; */
+    top: -25vh;
+    width: auto;
+    min-height: 300px;
+    min-width: unset;
+    justify-content: center;
+    border: 5px solid red;
+  }
+
+  .article-icons > * {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
   }
 
 }
