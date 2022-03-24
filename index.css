@@ -325,6 +325,19 @@ h2.recent-works-outer {
   color: white;
   line-height: 24px;
   justify-content: flex-start;
+  border: 1px solid transparent;
+}
+
+.see-project:hover {
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  background-color: white;
+}
+
+.see-project:active {
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  background-color: bisque;
 }
 
 li.grid-item > a.see-project-outer {
@@ -678,7 +691,7 @@ footer.footer > .media-icons {
 }
 
 .submit-button {
-  border: none;
+  border: 1px solid transparent;
 }
 
 .form > .submit-button {
