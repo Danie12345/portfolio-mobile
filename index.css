@@ -804,7 +804,6 @@ div.form-child {
 
   .article-icons {
     position: relative;
-    /* left: -10%; */
     top: -25vh;
     width: auto;
     min-height: 300px;
@@ -818,5 +817,4 @@ div.form-child {
     flex-direction: column;
     width: min-content;
   }
-
 }
