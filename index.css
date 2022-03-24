@@ -215,7 +215,7 @@ li {
 }
 
 .grid-item-generic:hover {
-  box-shadow: 0px 6px 16px rgb(213, 213, 213);
+  box-shadow: 0 6px 16px rgb(213, 213, 213);
 }
 
 .multi-post-stories {
@@ -336,7 +336,7 @@ h2.recent-works-outer {
   border: 1px solid #ff6b00;
   color: #ff6b00;
   background-color: bisque;
-  box-shadow: 0px 6px 16px rgb(213, 213, 213); 
+  box-shadow: 0 6px 16px rgb(213, 213, 213);
 }
 
 .see-project:active {
