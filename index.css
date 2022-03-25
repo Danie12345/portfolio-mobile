@@ -772,7 +772,7 @@ div.form-child {
   }
 
   /* Headline */
-  .content {
+  .content-headline {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -850,7 +850,7 @@ div.form-child {
     justify-content: space-around;
   }
 
-  ul.media-icons {
+  ul.media-icons-top {
     min-height: 30vh;
   }
 
