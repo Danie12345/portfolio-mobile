@@ -204,10 +204,12 @@ li {
 }
 
 .grid-item-generic {
-  align-items: center;
+  align-self: center;
   justify-content: center;
   margin: 12px 24px;
   min-height: 386px;
+  height: 386px;
+  width: 327px;
   background-image: url("Icons/img-placeholder2.png");
   background-size: contain;
   background-position: center;
@@ -360,13 +362,13 @@ li.grid-item > a.see-project-outer {
 }
 
 li.grid-item-generic > a.see-project-outer-generic {
-  min-width: 327px;
   width: 327px;
+  max-width: 327px;
   height: 48px;
   background-color: #ff6b00;
   position: relative;
-  bottom: -50px;
   margin: 0%;
+  margin-top: auto;
   padding: 0%;
   display: flex;
 }
@@ -403,6 +405,9 @@ div.see-project > * {
   flex-direction: column;
   width: 295px;
   min-width: 295px;
+  flex-grow: 1;
+  margin-top: 86px;
+  align-self: center;
 }
 
 .grid-item-generic > .project-info {
@@ -723,7 +728,7 @@ div.form-child {
   border-radius: 10px;
 }
 
-.menu-show {
+.mobile-hide {
   display: none;
 }
 
@@ -735,7 +740,7 @@ div.form-child {
     min-height: 72px;
   }
 
-  .menu-show {
+  .mobile-hide {
     display: flex;
     justify-content: flex-start;
   }
