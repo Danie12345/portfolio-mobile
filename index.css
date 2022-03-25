@@ -214,6 +214,10 @@ li {
   background-repeat: no-repeat;
 }
 
+.grid-item-generic:hover {
+  box-shadow: 0 6px 16px rgb(213, 213, 213);
+}
+
 .multi-post-stories {
   display: flex;
   flex-direction: column;
@@ -332,6 +336,7 @@ h2.recent-works-outer {
   border: 1px solid #ff6b00;
   color: #ff6b00;
   background-color: bisque;
+  box-shadow: 0 6px 16px rgb(213, 213, 213);
 }
 
 .see-project:active {
@@ -716,4 +721,105 @@ div.form-child {
   bottom: -20px;
   left: calc(50% - 35.7333% / 2);
   border-radius: 10px;
+}
+
+.menu-show {
+  display: none;
+}
+
+/* Media queries for desktop */
+
+@media screen and (min-width: 768px) {
+  /* Header */
+  .header {
+    min-height: 72px;
+  }
+
+  .menu-show {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu-show > * {
+    width: auto;
+  }
+
+  .navitem {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Headline */
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 72px);
+  }
+
+  .content > * {
+    display: flex;
+    flex-direction: column;
+    padding-left: 9.930555%;
+  }
+
+  .decorative-background {
+    background-image: url("Icons/background-shapes-full.png");
+    background-position-y: top;
+  }
+
+  .headline {
+    width: 39.30555%;
+    left: 9.930555%;
+  }
+
+  .intro {
+    align-content: flex-start;
+  }
+
+  h1 {
+    font-size: 72px;
+    line-height: 82px;
+    margin: 12px 0%;
+  }
+
+  .h3-first {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 500;
+    width: 100%;
+    margin: 0%;
+    margin: 12px 0%;
+  }
+
+  .self-intro {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 100%;
+    margin: 0%;
+    margin: 12px 0%;
+  }
+
+  .article-icons {
+    position: relative;
+    top: -25vh;
+    width: auto;
+    min-height: 300px;
+    min-width: unset;
+    justify-content: center;
+    border: 5px solid red;
+  }
+
+  .article-icons > * {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+  }
 }
