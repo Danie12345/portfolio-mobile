@@ -733,6 +733,14 @@ div.form-child {
 
 /* Media queries for desktop */
 
+@media screen and (min-width: 1025px) {
+  .decorative-background {
+    background-image: url("Icons/background-shapes-full.png");
+    background-position-y: top;
+    background-position-x: right;
+  }
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   .header {
@@ -750,13 +758,13 @@ div.form-child {
 
   .navitem {
     justify-content: center;
-    width: auto;
+    width: fit-content;
     align-self: center;
   }
 
   .name {
     position: relative;
-    left: -10%;
+    left: 25%;
   }
 
   .hamburger {
@@ -778,12 +786,12 @@ div.form-child {
   }
 
   .decorative-background {
-    background-image: url("Icons/background-shapes-full.png");
-    background-position-y: top;
+    height: calc(100vh - 72px);
   }
 
   .headline {
     width: 100%;
+    margin-left: 0%;
   }
 
   .headline > * {
@@ -793,7 +801,7 @@ div.form-child {
   }
 
   .headline-info {
-    width: 39.30555vw;
+    width: 39.30555%;
   }
 
   .intro {
@@ -842,9 +850,23 @@ div.form-child {
     justify-content: space-around;
   }
 
+  ul.media-icons {
+    min-height: 30vh;
+  }
+
   .bigscreen-flex {
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * > .headline {
+    width: 169%;
+  }
+
+  .content {
+    min-height: calc(100vh - 72px);
   }
 }
