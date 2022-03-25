@@ -16,19 +16,14 @@ html {
   line-height: 24px;
   flex-flow: row;
   margin: 1rem;
-  width: 87.2%;
+  width: fit-content;
   justify-content: space-between;
-}
-
-* > .hamburger {
-  display: flex;
-  justify-content: flex-end;
-  border: 2px solid blue;
 }
 
 .hamburger {
   border: none;
   outline: none;
+  float: right;
 }
 
 .content-container {
@@ -54,6 +49,10 @@ section {
   color: white;
   font-family: 'Crete Round', serif;
   width: 100%;
+}
+
+.headline {
+  margin-left: 24px;
 }
 
 .h3-first {
@@ -751,9 +750,13 @@ div.form-child {
 
   .navitem {
     justify-content: center;
-    align-items: center;
-    height: auto;
     width: auto;
+    align-self: center;
+  }
+
+  .name {
+    position: relative;
+    left: -10%;
   }
 
   .hamburger {
@@ -765,7 +768,7 @@ div.form-child {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: calc(100vh - 72px);
+    min-height: calc(100vh - 72px);
   }
 
   .content > * {
@@ -780,8 +783,17 @@ div.form-child {
   }
 
   .headline {
-    width: 39.30555%;
-    left: 9.930555%;
+    width: 100%;
+  }
+
+  .headline > * {
+    width: 100%;
+    margin: 0%;
+    margin: 12px 0%;
+  }
+
+  .headline-info {
+    width: 39.30555vw;
   }
 
   .intro {
@@ -798,33 +810,41 @@ div.form-child {
     font-size: 32px;
     line-height: 44px;
     font-weight: 500;
-    width: 100%;
-    margin: 0%;
-    margin: 12px 0%;
   }
 
   .self-intro {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
-    width: 100%;
+  }
+
+  .clear-div {
+    padding: 0%;
     margin: 0%;
-    margin: 12px 0%;
+    display: flex;
   }
 
   .article-icons {
-    position: relative;
-    top: -25vh;
-    width: auto;
-    min-height: 300px;
-    min-width: unset;
+    width: 8%;
+    height: 250px;
     justify-content: center;
-    border: 5px solid red;
   }
 
   .article-icons > * {
     display: flex;
     flex-direction: column;
-    width: min-content;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .media-icon {
+    justify-content: space-around;
+  }
+
+  .bigscreen-flex {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
