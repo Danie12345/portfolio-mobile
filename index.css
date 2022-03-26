@@ -1097,10 +1097,6 @@ div.form-child {
     }
   }
 
-  .see-project-outer > * {
-    display: none;
-  }
-
   .see-project-outer:hover {
     display: block;
     width: 100%;
