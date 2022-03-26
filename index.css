@@ -32,7 +32,7 @@ html {
   min-height: 590px;
   background-position-y: top;
   display: flex;
-  background-color: rgb(0, 0, 0, 0.9);
+  background-color: #1c1a19;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -524,7 +524,7 @@ section.about-me > .h2-about-me {
 .decorative-background2 {
   margin: 0%;
   min-height: auto;
-  background-color: #1c1a19;
+  background-color: #262626;
   background-image: url("Icons/background-shapes2.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -1122,8 +1122,8 @@ div.form-child {
   @keyframes about-me-background {
     to {
       background-image: url("Icons/background-shapes2-full.png");
-      background-size: 40%;
-      background-position-y: calc(380px - calc(160vw / 13));
+      background-position-y: calc(320px - calc(160vw / 13));
+      background-size: calc(50% - calc(160vw / 13));
     }
   }
 
@@ -1132,6 +1132,13 @@ div.form-child {
     position: relative;
     align-self: flex-start;
     padding-left: 142px;
+  }
+
+  .about-me-text {
+    max-width: 566px;
+    width: 566px;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   div.knowledge {
