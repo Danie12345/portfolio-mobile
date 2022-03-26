@@ -1101,6 +1101,35 @@ div.form-child {
     display: block;
     width: 100%;
   }
+
+  /* About Me */
+  .about-me {
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-name: about-me-background;
+  }
+
+  @keyframes about-me-background {
+    to {
+      background-image: url("Icons/background-shapes2-full.png");
+      background-size: 40%;
+      background-position-y: calc(380px - calc(160vw / 13));
+    }
+  }
+
+  .about-me > *:nth-child(-n+3) {
+    max-width: 50%;
+    position: relative;
+    align-self: flex-start;
+    padding-left: 142px;
+  }
+
+  div.knowledge {
+    width: calc(80.2777% / 3);
+    flex-direction: row;
+    flex: 1;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
