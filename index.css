@@ -1130,6 +1130,37 @@ div.form-child {
     flex-direction: row;
     flex: 1;
   }
+
+  /* Form */
+  .form-container {
+    flex-direction: row;
+    margin-top: 24px;
+  }
+
+  .form-text {
+    width: 31.597222%;
+    height: max-content;
+    margin: 0%;
+    margin-left: 135px;
+    text-align: left;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .form {
+    width: 47.5%;
+    margin-right: 142px;
+    padding-top: 32px;
+    position: relative;
+    bottom: 0%;
+  }
+
+  form.form > div.form-child {
+    display: block;
+    width: 100%;
+    margin-left: calc(100% * calc(1 - calc(0.6166 / 0.6458188)));
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1165,5 +1196,12 @@ div.form-child {
   .multi-post-stories-column {
     height: 100%;
     flex-grow: 4;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .form-text {
+    font-size: 30px;
+    font-weight: 800;
   }
 }
