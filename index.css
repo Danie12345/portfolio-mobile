@@ -1161,6 +1161,11 @@ div.form-child {
     width: 100%;
     margin-left: calc(100% * calc(1 - calc(0.6166 / 0.6458188)));
   }
+
+  /* Footer */
+  .bottom-black-bar {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
