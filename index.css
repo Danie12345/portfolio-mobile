@@ -931,8 +931,11 @@ div.form-child {
 
   h2.recent-works {
     border: none;
-    vertical-align: middle;
     width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .recent-works > span {
