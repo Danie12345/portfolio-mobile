@@ -955,6 +955,12 @@ div.form-child {
     padding-left: 24px;
   }
 
+  .multi-post-image-outer {
+    max-height: 448px;
+    height: auto;
+    max-width: 75%;
+  }
+
   .multi-post-stories-outer {
     flex-direction: row;
     width: 100%;
@@ -969,25 +975,25 @@ div.form-child {
 
   .multi-post-image {
     align-content: center;
-    height: auto;
-    width: auto;
-    max-width: 100%;
+    max-width: 648px;
     flex-grow: 2;
   }
 
   .multi-post-image > img {
     background-size: contain;
     height: 100%;
-    width: 47.5vw;
-    max-width: 618px;
+    width: 100%;
+    max-width: 648px;
     vertical-align: middle;
+    float: right;
+    padding-right: 12px;
   }
 
   .multi-post-stories-column {
     flex-direction: column;
     align-self: flex-start;
     width: 38.754325259%;
-    max-width: 38.754325259%;
+    max-width: 448px;
     min-width: auto;
     padding: 0%;
     margin: 0%;
@@ -1181,13 +1187,13 @@ div.form-child {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1040px) {
+@media screen and (min-width: 768px) and (max-width: 1156px) {
   .multi-post-text {
     font-size: 14px;
   }
 
   .language-btns-container {
-    flex-grow: 3;
+    flex-grow: 7;
     align-items: center;
     height: auto;
     width: auto;
@@ -1199,6 +1205,11 @@ div.form-child {
 
   .contain-on-pc {
     min-width: unset;
+    margin: 0%;
+  }
+
+  ul.contain-on-pc {
+    height: 100px;
   }
 
   .multi-post-stories-column {
