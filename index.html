@@ -22,7 +22,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="menu-show">
+            <div class="mobile-hide">
                 <a class="navitem portfolio" href="">Portfolio</a>
                 <a class="navitem about" href="">About</a>
                 <a class="navitem contact" href="">Contact</a>
@@ -31,21 +31,23 @@
                 </a>
             </div>
         </header>
-        <section class="content-container content decorative-background">
-            <h1 class="headline">
-                <span class="intro">Hey There.</span>
-                <span class="intro">I'm Daniel</span>
-            </h1>
-            <section class="headline">
-                <h3 class="h3-first">I'm a Software Developer</h3>
-                <p class="self-intro">
-                    I can help you build a product, feature or website. Look through some of 
-                    my work and experience it! If you like what you see and have a project 
-                    you need coded, please don't hesitate to contact me.
-                </p>
-            </section>
-            <div class="article-icons">
-                <ul class="media-icons">
+        <section class="content-container content decorative-background content-headline bigscreen-flex">
+            <div class="clear-div headline-info">
+                <h1 class="headline">
+                    <span class="intro">Hey There.</span>
+                    <span class="intro">I'm Daniel</span>
+                </h1>
+                <section class="headline">
+                    <h3 class="h3-first">I'm a Software Developer</h3>
+                    <p class="self-intro">
+                        I can help you build a product, feature or website. Look through some of 
+                        my work and experience it! If you like what you see and have a project 
+                        you need coded, please don't hesitate to contact me.
+                    </p>
+                </section>
+            </div>
+            <div class="clear-div article-icons">
+                <ul class="media-icons media-icons-top">
                     <li class="media-icon headline-icon"><a href="#" class="headline-icon"><img src="Icons/Vector.png" alt=""></a></li>
                     <li class="media-icon headline-icon"><a href="#" class="headline-icon"><img src="Icons/Vector-1.png" alt=""></a></li>
                     <li class="media-icon headline-icon"><a href="#" class="headline-icon"><img src="Icons/Vector-2.png" alt=""></a></li>
@@ -54,41 +56,46 @@
                 </ul>
             </div>
         </section>
-        <section class="content">
-            <ul class="projects-grid">
-                <li class="grid-item recent-works-outer">
+        <section class="content grid-container-outer">
+            <ul class="content grid-container">
+                <li class="grid-item recent-works-outer grid-item-top-pc new-recent-works-outer">
                     <h2 class="recent-works">
                         <span>My Recent Works</span>
                     </h2>
+                    <hr class="mobile-hide recent-works-line">
                 </li>
-                <li class="grid-item multi-post-stories">
-                    <a href=""><img src="Icons/img-placeholder1.png" alt=""></a>
-                    <h3 class="multi-post-title h3-second">Multi-Post Stories</h3>
-                    <p class="multi-post-text">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required; 
-                        has been the industry's standard dummy text ever since the 1500s, when an unknown 
-                        printer took a standard dummy text.
-                    </p>
-                    <ul class="language-btns-container">
-                        <li>
-                            <a href="" class="language-btn">CSS</a>
-                        </li>
-                        <li>
-                            <a href="" class="language-btn">HTML</a>
-                        </li>
-                        <li>
-                            <a href="" class="language-btn">Bootstrap</a>
-                        </li>
-                        <li>
-                            <a href="" class="language-btn">Ruby</a>
-                        </li>
-                    </ul>
-                    <a href="" class="see-project-outer">
-                        <div class="see-project">
-                            See Project
-                        </div>
-                    </a>
+                <li class="grid-item multi-post-stories-outer grid-item-top-pc multi-post-image-outer">
+                    <a href="" class="multi-post-image"><img src="Icons/img-placeholder1.png" alt=""></a>
+                    <div class="multi-post-stories multi-post-stories-column">
+                        <h3 class="multi-post-title h3-second">Multi-Post Stories</h3>
+                        <p class="multi-post-text">
+                            A daily selection of privately personalized reads; no accounts or sign-ups required; 
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                            printer took a standard dummy text.
+                        </p>
+                        <ul class="language-btns-container contain-on-pc">
+                            <li>
+                                <a href="" class="language-btn">CSS</a>
+                            </li>
+                            <li>
+                                <a href="" class="language-btn">HTML</a>
+                            </li>
+                            <li>
+                                <a href="" class="language-btn">Bootstrap</a>
+                            </li>
+                            <li>
+                                <a href="" class="language-btn">Ruby</a>
+                            </li>
+                        </ul>
+                        <a href="" class="see-project-outer contain-on-pc">
+                            <div class="see-project">
+                                See Project
+                            </div>
+                        </a>
+                    </div>
                 </li>
+            </ul>
+            <ul class="projects-grid">
                 <li class="grid-item grid-item-generic">
                     <section class="project-info">
                         <h3 class="project-title">Professional Art Printing Data</h3>
@@ -238,14 +245,12 @@
                             </li>
                         </ul>
                     </section>
-                    
                     <a href="" class="see-project-outer-generic">
                         <span class="see-project">
                             See Project
                         </span>
                     </a>
                 </li>
-                <li class="no-project"></li>
             </ul>
         </section>
         <section class="about-me decorative-background2">
