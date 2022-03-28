@@ -2,10 +2,12 @@
 
 # My Portfolio for Mobile! 
 
+Find the deployed version [here](https://danie12345.github.io/portfolio-mobile/)!
 
 ## Built With
 
-- HTML and CSS
+- HTML
+- CSS
 
 ## Getting Started
 
@@ -17,6 +19,7 @@ Download or clone the repository.
 
 ### Usage
 Open files directly from the main directory.
+Alternatively, open a live server with said file.
 
 
 ## Author
@@ -27,8 +30,8 @@ Open files directly from the main directory.
 
 ## Contributions
 
-- Shingirai Bhengesa: @ShingiraiBhengesa
-- Mahmoud Makhlouf: @devMahmoud
+- Shingirai Bhengesa: [@githubhandle](https://github.com/ShingiraiBhengesa)
+- Mahmoud Makhlouf: [@githubhandle](https://github.com/devMahmoud)
 
 
 ## 📝 License
