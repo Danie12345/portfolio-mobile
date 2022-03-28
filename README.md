@@ -26,12 +26,12 @@ Alternatively, open a live server with said file.
 
 👤 *Daniel Malo*
 
-- GitHub: [@githubhandle](https://github.com/Danie12345)
+- GitHub: [Danie12345](https://github.com/Danie12345)
 
 ## Contributions
 
-- Shingirai Bhengesa: [@githubhandle](https://github.com/ShingiraiBhengesa)
-- Mahmoud Makhlouf: [@githubhandle](https://github.com/devMahmoud)
+- Shingirai Bhengesa: [ShingiraiBhengesa](https://github.com/ShingiraiBhengesa)
+- Mahmoud Makhlouf: [devMahmoud](https://github.com/devMahmoud)
 
 
 ## 📝 License
