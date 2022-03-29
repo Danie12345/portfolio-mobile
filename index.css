@@ -506,7 +506,7 @@ section.about-me > * {
   align-content: flex-start;
 }
 
-span > .h2-about-me {
+div.h2-about-me {
   margin-top: 120px;
   height: auto;
   width: 87.2%;
@@ -586,10 +586,6 @@ ul.knowledge {
 
 .h3-adjust-text {
   width: 87.2%;
-}
-
-.h3-adjust-text > * {
-  width: 100%;
 }
 
 .floated-bullet {
@@ -1170,7 +1166,7 @@ div.form-child {
   }
 
   .form-text {
-    width: 70%;
+    width: 39.122957867%;
     height: max-content;
     margin: 0%;
     margin-left: 135px;
@@ -1178,10 +1174,6 @@ div.form-child {
     font-size: 40px;
     line-height: 52px;
     font-weight: 700;
-  }
-
-  .h3-adjust-text {
-    width: 60%;
   }
 
   .form {
@@ -1249,6 +1241,6 @@ div.form-child {
   .form-text {
     font-size: 30px;
     font-weight: 800;
-    width: 50%;
+    width: 100%;
   }
 }
