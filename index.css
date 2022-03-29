@@ -492,7 +492,7 @@ section.about-me > * {
   justify-content: center;
 }
 
-.h2-about-me {
+.h3-about-me-main {
   color: #ff6b00;
   height: auto;
   min-height: 79px;
@@ -506,7 +506,7 @@ section.about-me > * {
   align-content: flex-start;
 }
 
-div.h2-about-me {
+h3.h3-about-me-main {
   margin-top: 120px;
   height: auto;
   width: 87.2%;
