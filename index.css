@@ -482,13 +482,17 @@ li > section.about-me {
   height: auto;
 }
 
+.h2-adjust-about-me {
+  max-width: 87.2%;
+}
+
 section.about-me > * {
   margin: 12px 0%;
   height: auto;
   justify-content: center;
 }
 
-.h2-about-me {
+.h3-about-me-main {
   color: #ff6b00;
   height: auto;
   min-height: 79px;
@@ -502,7 +506,7 @@ section.about-me > * {
   align-content: flex-start;
 }
 
-section.about-me > .h2-about-me {
+h3.h3-about-me-main {
   margin-top: 120px;
   height: auto;
   width: 87.2%;
@@ -580,6 +584,10 @@ ul.knowledge {
   align-items: center;
 }
 
+.h3-adjust-text {
+  width: 87.2%;
+}
+
 .floated-bullet {
   max-height: 18px;
   max-width: 18px;
@@ -653,7 +661,11 @@ li > span.language {
   text-align: center;
   color: #172b4d;
   margin: 24px 0%;
-  width: 87.2%;
+  width: 100%;
+}
+
+* > .form-text {
+  width: 100%;
 }
 
 .form {
@@ -1154,7 +1166,7 @@ div.form-child {
   }
 
   .form-text {
-    width: 31.597222%;
+    width: 39.122957867%;
     height: max-content;
     margin: 0%;
     margin-left: 135px;
@@ -1229,5 +1241,6 @@ div.form-child {
   .form-text {
     font-size: 30px;
     font-weight: 800;
+    width: 100%;
   }
 }
