@@ -13,7 +13,7 @@
     <body class="body-container">
         <header class="header">
             <div class="brand">
-                <a class="navitem name" href="">Daniel Malo</a>
+                <a class="navitem name" href="/index.html">Daniel Malo</a>
             </div>
             <div class="brand">
                 <a class="button navitem hamburger">
@@ -23,9 +23,9 @@
                 </a>
             </div>
             <div class="mobile-hide brand">
-                <a class="navitem navitem2 portfolio" href="">Portfolio</a>
-                <a class="navitem navitem2 about" href="">About</a>
-                <a class="navitem navitem2 contact" href="">Contact</a>
+                <a class="navitem navitem2 portfolio" href="index.html#portfolio">Portfolio</a>
+                <a class="navitem navitem2 about" href="index.html#about-me">About</a>
+                <a class="navitem navitem2 contact" href="index.html#form">Contact</a>
                 <a class="navitem navitem2 mail" href="">
                     <img src="Icons/more-options.png" alt="Options menu">
                 </a>
@@ -56,7 +56,7 @@
                 </ul>
             </div>
         </section>
-        <section class="content grid-container-outer">
+        <section class="content grid-container-outer" name="portfolio" id="portfolio">
             <ul class="content grid-container">
                 <li class="grid-item recent-works-outer grid-item-top-pc new-recent-works-outer">
                     <h2 class="recent-works">
@@ -249,7 +249,7 @@
                 </li>
             </ul>
         </section>
-        <section class="about-me decorative-background2">
+        <section class="about-me decorative-background2" name="about-me" id="about-me">
             <h3 class="h3-about-me-main">About me</h3>
             <p class="about-me-text">
                 Hello I'm a software developer! I can help you build a product , 
@@ -350,7 +350,7 @@
                 I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.
             </h3>  
-            <form action="https://formspree.io/f/xbjwknnk" method="post" class="form">
+            <form action="https://formspree.io/f/xbjwknnk" method="post" class="form" name="form" id="form">
                 <ul class="form-child">
                     <li>
                         <input class="form-input name-input" type="text" placeholder="Full Name" name="full-name" maxlength="30" required>

@@ -1246,7 +1246,7 @@ div.form-child {
 
 @media screen and (max-width: 768px) {
   .header.active {
-    min-height: 100vh;
+    min-height: 100%;
     flex-direction: column;
     justify-content: flex-start;
     position: sticky;
@@ -1283,4 +1283,18 @@ div.form-child {
   .header.active a.navitem2:nth-child(n+4) {
     display: none;
   }
+
+  .header.active div.brand a.hamburger > * {
+    display: none;
+  }
+
+  .cross-menu{
+    background-image: url("Icons/x-menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    z-index: 5;
+  }
+
 }
