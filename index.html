@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <script src="index.js" async defer></script>
         <title>Daniel's Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +13,21 @@
     </head>
     <body class="body-container">
         <header class="header">
-            <div>
-                <a class="navitem name" href="">Daniel Malo</a>
+            <div class="brand">
+                <a class="navitem name" href="/index.html">Daniel Malo</a>
             </div>
-            <div>
-                <a class="button navitem hamburger" href="">
+            <div class="brand">
+                <a class="button navitem hamburger">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 .5 16 16" fill="currentColor" class="bi bi-list">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                     </svg>
                 </a>
             </div>
-            <div class="mobile-hide">
-                <a class="navitem portfolio" href="">Portfolio</a>
-                <a class="navitem about" href="">About</a>
-                <a class="navitem contact" href="">Contact</a>
-                <a class="navitem mail" href="">
+            <div class="mobile-hide brand">
+                <a class="navitem navitem2 portfolio" href="index.html#portfolio">Portfolio</a>
+                <a class="navitem navitem2 about" href="index.html#about-me">About</a>
+                <a class="navitem navitem2 contact" href="index.html#form">Contact</a>
+                <a class="navitem navitem2 mail" href="">
                     <img src="Icons/more-options.png" alt="Options menu">
                 </a>
             </div>
@@ -56,7 +57,7 @@
                 </ul>
             </div>
         </section>
-        <section class="content grid-container-outer">
+        <section class="content grid-container-outer" id="portfolio">
             <ul class="content grid-container">
                 <li class="grid-item recent-works-outer grid-item-top-pc new-recent-works-outer">
                     <h2 class="recent-works">
@@ -249,7 +250,7 @@
                 </li>
             </ul>
         </section>
-        <section class="about-me decorative-background2">
+        <section class="about-me decorative-background2" id="about-me">
             <h3 class="h3-about-me-main">About me</h3>
             <p class="about-me-text">
                 Hello I'm a software developer! I can help you build a product , 
@@ -345,7 +346,7 @@
                 </div>
             </section>
         </section>
-        <section class="form-container">
+        <section class="form-container" id="form">
             <h3 class="form-text">
                 I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.

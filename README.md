@@ -32,7 +32,8 @@ Alternatively, open a live server with said file.
 
 - Shingirai Bhengesa: [ShingiraiBhengesa](https://github.com/ShingiraiBhengesa)
 - Mahmoud Makhlouf: [devMahmoud](https://github.com/devMahmoud)
-- Enekwe stanley: [Enekwestanley](https://github.com/Enekwestanley)
+- Enekwe Stanley: [Enekwestanley](https://github.com/Enekwestanley)
+- Arturo Hermida: [Arturo](https://github.com/Artbsc1992)
 
 
 ## 📝 License

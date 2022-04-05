@@ -104,9 +104,8 @@ div > span {
   min-width: 375px;
   width: 100%;
   margin: 0%;
-  height: 15.6vh;
+  height: auto;
   min-height: 80px;
-  max-height: 144px;
 }
 
 .body-container {
@@ -1242,5 +1241,67 @@ div.form-child {
     font-size: 30px;
     font-weight: 800;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header.active {
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .header.active .brand:nth-child(1) {
+    display: none;
+  }
+
+  .header.active .brand:nth-child(2) {
+    height: 80px;
+  }
+
+  .header.active .brand:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 87.5%;
+  }
+
+  .header.active a.navitem2:nth-child(-n+3) {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 16px;
+    width: 87.5%;
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .header.active a.navitem2:nth-child(n+4) {
+    display: none;
+  }
+
+  .header.active div.brand a.hamburger {
+    height: 12px;
+    width: 12px;
+    position: relative;
+    right: 5.8666%;
+    top: 38px;
+  }
+
+  .header.active div.brand a.hamburger > * {
+    display: none;
+  }
+
+  .cross-menu {
+    background-image: url("Icons/x-menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-self: center;
   }
 }
