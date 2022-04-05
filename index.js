@@ -72,9 +72,12 @@ let template = (obj) => {
   let h3 = document.createElement('h3');
   h3.appendChild(document.createTextNode(obj.title))
   h3.classList.add('preview-title');
+  let divIcon = document.createElement('div');
+  divIcon.classList.add('preview-icon');
   let i = document.createElement('i');
   i.style.height = '12px';
-  i.classList.add('cross-menu');
+  i.classList.add('cross-menu2');
+  divIcon.appendChild(i);
   let div1 = document.createElement('div');
   for (let btn of buttons.langs) {
     let button = document.createElement('button');
@@ -90,14 +93,18 @@ let template = (obj) => {
   p.appendChild(document.createTextNode(obj.text));
   p.classList.add('preview-text')
   let div2 = document.createElement('div');
-  div2.children = buttons.other.forEach(btn => {
+
+  for (let btn of buttons.other) {
     let button = document.createElement('button');
     button.appendChild(document.createTextNode(btn[0]));
     button.setAttribute.source = btn[1];
-  });
+    button.classList.add('see-project');
+    div2.appendChild(button);
+  }
+
   div2.classList.add('preview-buttons')
+  div.appendChild(divIcon);
   div.appendChild(h3);
-  div.appendChild(i);
   div.appendChild(div1);
   div.appendChild(img);
   div.appendChild(p);
