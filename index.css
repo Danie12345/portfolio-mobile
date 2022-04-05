@@ -1268,18 +1268,18 @@ div.form-child {
   }
 
   .header.active a.navitem2:nth-child(-n+3) {
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     align-self: flex-start;
     padding-left: 16px;
     width: 87.5%;
     border-bottom: 1px solid #6f6c6b;
   }
-  
+
   .header.active a.navitem2:nth-child(n+4) {
     display: none;
   }
@@ -1288,7 +1288,7 @@ div.form-child {
     display: none;
   }
 
-  .cross-menu{
+  .cross-menu {
     background-image: url("Icons/x-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1296,5 +1296,4 @@ div.form-child {
     height: 10px;
     z-index: 5;
   }
-
 }

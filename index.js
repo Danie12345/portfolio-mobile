@@ -7,11 +7,9 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('cross-menu');
 });
 
-navItems.forEach((navItem)=>{
+navItems.forEach((navItem) => {
   navItem.addEventListener('click', () => {
     header.classList.toggle('active');
     burger.classList.toggle('cross-menu');
   });
 });
-
-
