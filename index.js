@@ -105,11 +105,11 @@ const template = (obj) => {
   divTop.appendChild(i);
 
   const div1 = document.createElement('div');
-  for (const btn of obj.buttons.langs) {
+  obj.buttons.langs.forEach((btn) => {
     const button = document.createElement('button');
     button.appendChild(document.createTextNode(btn));
     div1.appendChild(button);
-  }
+  });
   div1.classList.add('preview-langs');
 
   const img = document.createElement('img');
@@ -122,14 +122,15 @@ const template = (obj) => {
   p.classList.add('preview-text');
 
   const div2 = document.createElement('div');
-  for (const btn of obj.buttons.other) {
+  obj.buttons.other.forEach((btn) => {
     const button = document.createElement('button');
-    button.appendChild(document.createTextNode(btn[0]));
-    button.setAttribute.source = btn[1];
+    const [a, b] = btn;
+    button.appendChild(document.createTextNode(a));
+    button.setAttribute.source = b;
     button.classList.add('see-project');
     button.setAttribute('id', 'open-project');
     div2.appendChild(button);
-  }
+  });
   div2.classList.add('preview-buttons');
 
   div.appendChild(divTop);
@@ -145,12 +146,11 @@ document.querySelectorAll('.grid-item-generic').forEach((card) => {
   openProject.addEventListener('click', () => {
     let selectedCard;
     const name = card.getAttribute('data-name');
-    for (const card of cardsArr) {
+    cardsArr.forEach((card) => {
       if (card.name === name) {
         selectedCard = card;
-        break;
       }
-    }
+    });
     const templateFilled = template(selectedCard);
     previewContainer.innerHTML = '';
     previewContainer.appendChild(templateFilled);
