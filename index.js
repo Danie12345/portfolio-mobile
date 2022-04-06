@@ -24,7 +24,7 @@ const buttons = {
 let cardsArr = [
   {
     name: 'card1',
-    image: 'Icons/img-placeholder2.1.png',
+    image: 'Icons/img-placeholder2.png',
     title: 'Professional Art Printing Data',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     link: {'project': '', 'source': ''}
@@ -38,7 +38,7 @@ let cardsArr = [
   },
   {
     name: 'card3',
-    image: 'Icons/img-placeholder2.1.png',
+    image: 'Icons/img-placeholder1.png',
     title: 'Obsess No More With Your HTML',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     link: {'project': '', 'source': ''}
@@ -69,12 +69,20 @@ let cardsArr = [
 let template = (obj) => {
   let div = document.createElement('div');
   div.classList.add('preview');
+
+  let divTop = document.createElement('div');
+  divTop.classList.add('preview-divtop');
   let h3 = document.createElement('h3');
-  h3.appendChild(document.createTextNode(obj.title))
+  h3.appendChild(document.createTextNode(obj.title));
   h3.classList.add('preview-title');
+  let divIcon = document.createElement('div');
   let i = document.createElement('i');
   i.style.height = '12px';
-  i.classList.add('cross-menu');
+  i.classList.add('cross-menu2');
+  divIcon.appendChild(i);
+  divTop.appendChild(h3);
+  divTop.appendChild(i);
+
   let div1 = document.createElement('div');
   for (let btn of buttons.langs) {
     let button = document.createElement('button');
@@ -82,30 +90,36 @@ let template = (obj) => {
     div1.appendChild(button);
   }
   div1.classList.add('preview-langs');
+
   let img = document.createElement('img');
-  img.src = 'Icons/img-placeholder2.1.png';
+  img.src = obj.image;
   img.alt = 'Showcase image.';
   img.classList.add('preview-img');
+
   let p = document.createElement('p');
   p.appendChild(document.createTextNode(obj.text));
-  p.classList.add('preview-text')
+  p.classList.add('preview-text');
+
   let div2 = document.createElement('div');
-  div2.children = buttons.other.forEach(btn => {
+  for (let btn of buttons.other) {
     let button = document.createElement('button');
     button.appendChild(document.createTextNode(btn[0]));
     button.setAttribute.source = btn[1];
-  });
+    button.classList.add('see-project');
+    div2.appendChild(button);
+  }
   div2.classList.add('preview-buttons')
-  div.appendChild(h3);
-  div.appendChild(i);
+
+  div.appendChild(divTop);
   div.appendChild(div1);
   div.appendChild(img);
   div.appendChild(p);
   div.appendChild(div2);
+  
   return div;
 }
 
-let templateFilled = template(cardsArr[1]);
+let templateFilled = template(cardsArr[2]);
 document.getElementById('preview-container').appendChild(templateFilled);
 
 document.querySelectorAll('.preview-container .preview-card').forEach(card => {
