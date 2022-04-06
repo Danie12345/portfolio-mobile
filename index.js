@@ -21,10 +21,9 @@ const cardsArr = [
     image: 'Icons/img-placeholder2.png',
     title: 'Professional Art Printing Data',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
-    link: { project: '', source: '' },
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', ''], ['See Source', '']],
+      other: [['See Live', ''], ['See Source', '']], // The links go in the empty strings, each button has a name and link strings.
     },
   },
   {
@@ -32,7 +31,6 @@ const cardsArr = [
     image: 'Icons/img-placeholder2.1.png',
     title: 'Object-Oriented Programming',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
-    link: { project: '', source: '' },
     buttons: {
       langs: ['CSS', 'Bootstrap', 'Ruby on Rails'],
       other: [['See Live', ''], ['See Source', '']],
@@ -43,7 +41,6 @@ const cardsArr = [
     image: 'Icons/img-placeholder1.png',
     title: 'Obsess No More With Your HTML',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
-    link: { project: '', source: '' },
     buttons: {
       langs: ['python', 'Bootstrap', 'Ruby on Rails'],
       other: [['See Live', ''], ['See Source', '']],
@@ -54,7 +51,6 @@ const cardsArr = [
     image: 'Icons/img-placeholder2.1.png',
     title: 'Ruby Just Got Crazy',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
-    link: { project: '', source: '' },
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
       other: [['See Live', ''], ['See Source', '']],
@@ -65,7 +61,6 @@ const cardsArr = [
     image: 'Icons/img-placeholder2.1.png',
     title: 'Functional Programming? YES',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
-    link: { project: '', source: '' },
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
       other: [['See Live', ''], ['See Source', '']],
@@ -76,7 +71,6 @@ const cardsArr = [
     image: 'Icons/img-placeholder2.1.png',
     title: 'The Rabbit-Hole To End All Rabbit-Holes Just Got Deep!',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
-    link: { project: '', source: '' },
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
       other: [['See Live', ''], ['See Source', '']],
