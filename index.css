@@ -1432,3 +1432,59 @@ div.form-child {
     display: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .preview {
+    display: grid;
+    grid-template-areas: "ptitle ptitle ptitle" "plangs plangs ." "pimg pimg ptext" "pimg pimg ptext" "pimg pimg pbuttons";
+    gap: 0;
+    height: 89.253731343%;
+    min-height: 600px;
+    width: fit-content;
+    color: #091e42;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 5.373134328% 0%;
+  }
+
+  .preview-divtop {
+    grid-area: ptitle;
+    width: 100%;
+  }
+
+  .preview-title {
+    margin: 0;
+  }
+
+  .preview-langs {
+    grid-area: plangs;
+  }
+
+  .preview-buttons > * {
+    margin-right: 10px;
+  }
+
+  .preview-img {
+    grid-area: pimg;
+    max-height: 448px;
+  }
+
+  .preview-text {
+    grid-area: ptext;
+    max-width: 360px;
+    grid-row-end: auto;
+  }
+
+  .preview-buttons {
+    grid-area: pbuttons;
+    justify-content: flex-start;
+  }
+
+  #button1.open-project {
+    margin-right: 10px;
+  }
+}

@@ -23,7 +23,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', ''], ['See Source', '']], // The links go in the empty strings, each button has a name and link strings.
+      other: [['See Live', '', 'Icons/see-project-icon.svg'], ['See Source', '', 'Icons/source-icon.svg']],
     },
   },
   {
@@ -32,8 +32,8 @@ const cardsArr = [
     title: 'Object-Oriented Programming',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
-      langs: ['CSS', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', ''], ['See Source', '']],
+      langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+      other: [['See Live', '', 'Icons/see-project-icon.svg'], ['See Source', '', 'Icons/source-icon.svg']],
     },
   },
   {
@@ -42,8 +42,8 @@ const cardsArr = [
     title: 'Obsess No More With Your HTML',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
-      langs: ['python', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', ''], ['See Source', '']],
+      langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+      other: [['See Live', '', 'Icons/see-project-icon.svg'], ['See Source', '', 'Icons/source-icon.svg']],
     },
   },
   {
@@ -53,7 +53,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', ''], ['See Source', '']],
+      other: [['See Live', '', 'Icons/see-project-icon.svg'], ['See Source', '', 'Icons/source-icon.svg']],
     },
   },
   {
@@ -63,7 +63,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', ''], ['See Source', '']],
+      other: [['See Live', '', 'Icons/see-project-icon.svg'], ['See Source', '', 'Icons/source-icon.svg']],
     },
   },
   {
@@ -73,7 +73,7 @@ const cardsArr = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
     buttons: {
       langs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-      other: [['See Live', ''], ['See Source', '']],
+      other: [['See Live', '', 'Icons/see-project-icon.svg'], ['See Source', '', 'Icons/source-icon.svg']],
     },
   },
 ];
@@ -118,9 +118,12 @@ const template = (obj) => {
   const div2 = document.createElement('div');
   obj.buttons.other.forEach((btn) => {
     const button = document.createElement('button');
-    const [a, b] = btn;
-    button.appendChild(document.createTextNode(a));
-    button.setAttribute.source = b;
+    const [btnText, btnLink, btnIcon] = btn;
+    const img = document.createElement('img');
+    button.setAttribute('href', btnLink);
+    img.setAttribute('src', btnIcon);
+    button.innerHTML = btnText;
+    button.appendChild(img);
     button.classList.add('see-project');
     button.setAttribute('id', 'open-project');
     div2.appendChild(button);
