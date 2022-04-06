@@ -2,7 +2,6 @@ const burger = document.querySelector('.hamburger');
 const header = document.querySelector('.header');
 const navItems = document.querySelectorAll('.navitem2');
 const previewContainer = document.querySelector('.preview-container');
-const previewCard = document.querySelectorAll('.preview-card');
 
 burger.addEventListener('click', () => {
   header.classList.toggle('active');

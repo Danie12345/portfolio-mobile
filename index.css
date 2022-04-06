@@ -789,10 +789,6 @@ div.form-child {
   margin: 5.373134328% 0%;
 }
 
-.preview.active {
-  display: flex;
-}
-
 .preview-divtop {
   display: flex;
   justify-content: space-between;
