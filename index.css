@@ -387,6 +387,17 @@ li.grid-item-generic > a.see-project-outer-generic {
   display: flex;
 }
 
+.preview-langs > * {
+  text-align: center;
+  display: inline;
+  height: 36px;
+  border: 1px solid #000;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  background: none;
+  margin-right: 12px;
+}
+
 a.see-project-outer-generic > * {
   margin: 0%;
   width: 100%;
@@ -762,7 +773,8 @@ div.form-child {
 .preview-container {
   display: none;
   position: fixed;
-  top:0; left: 0;
+  top: 0;
+  left: 0;
   min-height: 100%;
   width: 100%;
   align-items: center;
@@ -799,7 +811,7 @@ div.form-child {
   text-align: left;
   width: 94%;
   color: #091e42;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -821,17 +833,6 @@ div.form-child {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-.preview-langs > * {
-  text-align: center;
-  display: inline;
-  height: 36px;
-  border: 1px solid #000;
-  padding: 10px;
-  font-family: "Inter", sans-serif;
-  background: none;
-  margin-right: 12px;
 }
 
 .preview-container .preview-card {
