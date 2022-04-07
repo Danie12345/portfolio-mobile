@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
         <script src="js/index.js" async defer></script>
+        <script src="js/form-validation.js" async defer></script>
         <title>Daniel's Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -347,26 +348,28 @@
                 </div>
             </section>
         </section>
-        <section class="form-container" id="form">
+        <section class="form-container">
             <h3 class="form-text">
                 I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.
             </h3>  
-            <form action="https://formspree.io/f/xbjwknnk" method="post" class="form">
+            <form action="https://formspree.io/f/xbjwknnk" method="post" class="form" id="form">
                 <ul class="form-child">
                     <li>
-                        <input class="form-input name-input" type="text" placeholder="Full Name" name="full-name" maxlength="30" required>
+                        <input class="form-input name-input" type="text" placeholder="Full Name" name="full-name">
                     </li>
                     <li>
-                        <input class="form-input email-input" type="email" placeholder="Email Address" name="email" required>
+                        <input class="form-input email-input" type="text" placeholder="Email Address" name="email">
                     </li>
                     <li>
-                        <textarea class="form-input comments-input" placeholder="Leave me any comments here!" name="comments" maxlength="500" required></textarea>
+                        <textarea class="form-input comments-input" placeholder="Leave me any comments here!" name="comments"></textarea>
                     </li>
                 </ul>
+                
                 <div class="form-child">
-                    <input class="see-project submit-button" type="submit" value="Get in Touch">
+                    <input class="see-project submit-button" type="submit" value="Get in Touch"><small class="form-msg"></small>
                 </div>
+                
             </form>
         </section>
         <footer class="footer">
