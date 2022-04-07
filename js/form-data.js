@@ -1,31 +1,34 @@
 const formReloads = document.querySelector('#form');
 
-const formData = {
-  name: '',
+let formData = {
+  'full-name': '',
   email: '',
   comments: '',
 };
 
-localStorage.setItem('form-data', JSON.stringify(formData));
-
-function itemListens(inputType) {
+function formInputListens(inputType) {
   formReloads.elements[inputType].addEventListener('input', () => {
-    localStorage[inputType] = formReloads.elements[inputType].value;
+    formData[inputType] = formReloads.elements[inputType].value;
+    localStorage.setItem('form-data', JSON.stringify(formData));
   });
 }
 
-function setItem(inputType) {
+function setFormInput(inputType) {
   if (localStorage[inputType] !== '') {
-    formReloads.elements[inputType].value = localStorage[inputType];
+    formReloads.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
   }
 }
 
 window.addEventListener('load', () => {
-  formData=JSON.parse(localStorage.getItem('form-data'));
-  itemListens('full-name');
-  itemListens('email');
-  itemListens('comments');
-  setItem('full-name');
-  setItem('email');
-  setItem('comments');
+  if (localStorage['form-data'] !== formData) {
+    formData = JSON.parse(localStorage.getItem('form-data'));
+  }
+
+  formData = JSON.parse(localStorage.getItem('form-data'));
+  formInputListens('full-name');
+  formInputListens('email');
+  formInputListens('comments');
+  setFormInput('full-name');
+  setFormInput('email');
+  setFormInput('comments');
 });
