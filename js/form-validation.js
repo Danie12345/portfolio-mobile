@@ -49,6 +49,9 @@ form.addEventListener("submit", (event) => {
     form.elements["full-name"].classList.remove('invalid-state');
     form.elements["email"].classList.remove('invalid-state');
     form.elements["comments"].classList.remove('invalid-state-comments');
+    form.elements["full-name"].classList.add('valid-state');
+    form.elements["email"].classList.add('valid-state');
+    form.elements["comments"].classList.add('valid-state-comments');
     smallMsg.classList.add('success');
     smallMsg.classList.remove('unsuccess');
     return;
@@ -58,16 +61,19 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!nameValid[0]) {
       smallMsg.innerHTML = nameValid[1];
+      form.elements["full-name"].classList.remove('valid-state');
       form.elements["full-name"].classList.add('invalid-state');
       return;
     }
     if (!emailValid[0]) {
       smallMsg.innerHTML = emailValid[1];
+      form.elements["email"].classList.remove('valid-state');
       form.elements["email"].classList.add('invalid-state');
       return;
     }
     if (!commentsValid[0]) {
       smallMsg.innerHTML = commentsValid[1];
+      form.elements["comments"].classList.remove('valid-state-comments');
       form.elements["comments"].classList.add('invalid-state-comments');
       return;
     }
