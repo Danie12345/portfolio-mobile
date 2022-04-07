@@ -63,16 +63,28 @@ form.addEventListener("submit", (event) => {
       smallMsg.innerHTML = nameValid[1];
       form.elements["full-name"].classList.remove('valid-state');
       form.elements["full-name"].classList.add('invalid-state');
+    } else {
+      form.elements["full-name"].classList.add('valid-state');
+      form.elements["full-name"].classList.remove('invalid-state');
+      smallMsg.innerHTML = '';
     }
     if (!emailValid[0]) {
-      smallMsg.innerHTML = emailValid[1];
+      smallMsg.innerHTML = smallMsg.innerHTML == '' ? emailValid[1] : smallMsg.innerHTML;
       form.elements["email"].classList.remove('valid-state');
       form.elements["email"].classList.add('invalid-state');
+    } else {
+      form.elements["email"].classList.add('valid-state');
+      form.elements["email"].classList.remove('invalid-state');
+      smallMsg.innerHTML = smallMsg.innerHTML == '' ? emailValid[1] : smallMsg.innerHTML;
     }
     if (!commentsValid[0]) {
-      smallMsg.innerHTML = commentsValid[1];
+      smallMsg.innerHTML = smallMsg.innerHTML == '' ? commentsValid[1] : smallMsg.innerHTML;
       form.elements["comments"].classList.remove('valid-state-comments');
       form.elements["comments"].classList.add('invalid-state-comments');
+    } else {
+      form.elements["comments"].classList.add('valid-state-comments');
+      form.elements["comments"].classList.remove('invalid-state-comments');
+      smallMsg.innerHTML = smallMsg.innerHTML == '' ? commentsValid[1] : smallMsg.innerHTML;
     }
   }
 });
