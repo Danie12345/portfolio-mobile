@@ -1,5 +1,3 @@
-
-
 const burger = document.querySelector('.hamburger');
 const header = document.querySelector('.header');
 const navItems = document.querySelectorAll('.navitem2');
