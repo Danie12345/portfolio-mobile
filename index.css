@@ -895,6 +895,54 @@ div.form-child {
   min-height: 16px;
 }
 
+.form-response {
+  font-family: 'inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  margin-left: 20px;
+}
+
+.success {
+  color: #1c8b1c;
+}
+
+.unsuccess {
+  color: hsl(0, 82%, 47%);
+}
+
+.valid-state {
+  border-color: #1c8b1c;
+}
+
+.valid-state::-webkit-input-placeholder {
+  color: #1c8b1c;
+}
+
+.invalid-state {
+  border-color: hsl(0, 82%, 47%);
+}
+
+.invalid-state::-webkit-input-placeholder {
+  color: hsl(0, 82%, 47%);
+}
+
+.valid-state-comments {
+  background-color: rgb(106, 175, 106, 0.2);
+}
+
+.valid-state-comments::-webkit-input-placeholder {
+  color: #1c8b1c;
+}
+
+.invalid-state-comments {
+  background-color: rgb(187, 81, 81, 0.2);
+}
+
+.invalid-state-comments::-webkit-input-placeholder {
+  color: hsl(0, 82%, 47%);
+}
+
 /* Media queries for desktop */
 
 @media screen and (min-width: 1025px) {
