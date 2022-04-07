@@ -895,6 +895,21 @@ div.form-child {
   min-height: 16px;
 }
 
+.form-response {
+  font-family: 'inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  margin-left: 20px;
+}
+
+.success {
+  color: #1c8b1c;
+}
+
+.unsuccess {
+  color: hsl(0, 82%, 47%);
+}
 /* Media queries for desktop */
 
 @media screen and (min-width: 1025px) {
