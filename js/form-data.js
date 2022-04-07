@@ -1,12 +1,12 @@
 const formReloads = document.querySelector('#form');
 
-let formData = {
+const formData = {
   name: '',
   email: '',
-  comments: ''
-}
+  comments: '',
+};
 
-localStorage = localStorage.length > 0 ? localStorage : formData;
+localStorage.setItem('form-data', JSON.stringify(formData));
 
 function itemListens(inputType) {
   formReloads.elements[inputType].addEventListener('input', () => {
@@ -20,5 +20,12 @@ function setItem(inputType) {
   }
 }
 
-itemListens('full-name');
-setItem('full-name');
+window.addEventListener('load', () => {
+  formData=JSON.parse(localStorage.getItem('form-data'));
+  itemListens('full-name');
+  itemListens('email');
+  itemListens('comments');
+  setItem('full-name');
+  setItem('email');
+  setItem('comments');
+});
