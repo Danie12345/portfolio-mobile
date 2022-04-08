@@ -27,7 +27,7 @@ const cardsArr = [
     },
   },
   {
-    name: 'card2',
+    name: 'card',
     image: 'Icons/img-placeholder2.1.png',
     title: 'Object-Oriented Programming',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required; has been the industry\'s standard',
@@ -83,14 +83,14 @@ const template = (obj) => {
   div.classList.add('preview');
 
   const divTop = document.createElement('div');
-  divTop.classList.add('preview-divtop');
+  divTop.classList.add('preview-title');
   const h3 = document.createElement('h3');
   h3.appendChild(document.createTextNode(obj.title));
-  h3.classList.add('preview-title');
+  h3.classList.add('preview-divtop');
   const divIcon = document.createElement('div');
   const i = document.createElement('i');
   i.style.height = '12px';
-  i.classList.add('cross-menu2');
+  i.classList.add('cross-menu');
   i.addEventListener('click', () => {
     previewContainer.classList.toggle('active');
   });
@@ -113,7 +113,7 @@ const template = (obj) => {
 
   const p = document.createElement('p');
   p.appendChild(document.createTextNode(obj.text));
-  p.classList.add('preview-text');
+  p.classList.add('preview-');
 
   const div2 = document.createElement('div');
   obj.buttons.other.forEach((btn) => {
