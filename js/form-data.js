@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
     formData = JSON.parse(localStorage.getItem('form-data'));
   }
   formInputListens('full-name');
-  formInputListens('email');
+  formInputListens('email);
   formInputListens('comments');
   setFormInput('full-name');
   setFormInput('email');
