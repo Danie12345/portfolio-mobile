@@ -389,7 +389,7 @@ li.grid-item-generic > a.see-project-outer-generic {
   height: 48px;
   background-color: #ff6b00;
   position: relative;
-  bottom: 0px;
+  bottom: 0px !important;
   margin: 0%;
   margin-top: auto;
   padding: 0%;
