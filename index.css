@@ -235,6 +235,10 @@ li {
   margin: 0% 12px 0% 12px;
 }
 
+.multi-post-image > img {
+  max-height: 512px;
+}
+
 .multi-post-stories-column {
   width: auto;
 }
@@ -263,6 +267,7 @@ li {
   flex-direction: column;
   height: calc(304px - 240px);
   margin: 120px 0%;
+  margin-top: 40px;
   padding: 0%;
   justify-content: center;
 }
@@ -319,6 +324,9 @@ h2.recent-works-outer {
   min-width: 327px;
   width: 87.2vw;
   margin: 12px 0%;
+  flex-wrap: wrap;
+  min-height: auto !important;
+  gap: 8px;
 }
 
 .language-btn {
@@ -338,7 +346,7 @@ h2.recent-works-outer {
   font-style: normal;
   letter-spacing: 0.03em;
   font-family: 'Inter', sans-serif;
-  width: fit-content;
+  width: auto;
   margin: 12px 0%;
   padding: 10px 12px;
   background-color: #ff6b00;
@@ -353,6 +361,7 @@ h2.recent-works-outer {
   color: #ff6b00;
   background-color: bisque;
   box-shadow: 0 6px 16px rgb(213, 213, 213);
+  box-sizing: border-box;
 }
 
 .see-project:active {
@@ -377,10 +386,11 @@ li.grid-item > a.see-project-outer {
 
 li.grid-item-generic > a.see-project-outer-generic {
   width: 100%;
-  max-width: 327px;
+  max-width: inherit;
   height: 48px;
   background-color: #ff6b00;
   position: relative;
+  bottom: 0 !important;
   margin: 0%;
   margin-top: auto;
   padding: 0%;
@@ -396,6 +406,10 @@ li.grid-item-generic > a.see-project-outer-generic {
   font-family: "Inter", sans-serif;
   background: none;
   margin-right: 12px;
+}
+
+.main-project-links > * {
+  width: auto;
 }
 
 a.see-project-outer-generic > * {
@@ -547,8 +561,10 @@ h3.h3-about-me-main {
 
 .get-resume {
   float: left;
-  max-width: 137px;
-  min-width: 137px;
+  max-width: max-content;
+  box-sizing: border-box;
+
+  /* min-width: 137px; */
 }
 
 * > .get-resume {
@@ -943,6 +959,17 @@ div.form-child {
   color: hsl(0, 82%, 47%);
 }
 
+.main-project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.open-project {
+  width: 100%;
+}
+
 /* Media queries for desktop */
 
 @media screen and (min-width: 1025px) {
@@ -1152,8 +1179,7 @@ div.form-child {
   }
 
   .multi-post-image-outer {
-    max-height: 448px;
-    height: auto;
+    height: max-content !important;
     max-width: 75%;
   }
 
@@ -1177,9 +1203,9 @@ div.form-child {
 
   .multi-post-image > img {
     background-size: contain;
-    height: 100%;
-    width: 100%;
-    max-width: 648px;
+
+    /* width: 100%; */
+    max-height: 512px;
     vertical-align: middle;
     float: right;
     padding-right: 12px;
@@ -1258,7 +1284,8 @@ div.form-child {
 
   .see-project-outer-generic {
     opacity: 0;
-    min-width: 369px;
+
+    /* min-width: 369px; */
   }
 
   .grid-item-generic:hover .see-project-outer-generic {
@@ -1304,7 +1331,6 @@ div.form-child {
 
   .see-project-outer:hover {
     display: block;
-    width: 100%;
   }
 
   /* About Me */
