@@ -390,7 +390,7 @@ li.grid-item-generic > a.see-project-outer-generic {
   height: 48px;
   background-color: #ff6b00;
   position: relative;
-  bottom: 0px !important;
+  bottom: 0 !important;
   margin: 0%;
   margin-top: auto;
   padding: 0%;
@@ -406,6 +406,10 @@ li.grid-item-generic > a.see-project-outer-generic {
   font-family: "Inter", sans-serif;
   background: none;
   margin-right: 12px;
+}
+
+.main-project-links > * {
+  width: auto;
 }
 
 a.see-project-outer-generic > * {
@@ -557,8 +561,9 @@ h3.h3-about-me-main {
 
 .get-resume {
   float: left;
-  max-width: fit-content;
+  max-width: max-content;
   box-sizing: border-box;
+
   /* min-width: 137px; */
 }
 
@@ -961,10 +966,6 @@ div.form-child {
   gap: 12px;
 }
 
-.main-project-links > * {
-  width: auto;
-}
-
 .open-project {
   width: 100%;
 }
@@ -1178,8 +1179,7 @@ div.form-child {
   }
 
   .multi-post-image-outer {
-    /* max-height: 448px; */
-    height: fit-content !important;
+    height: max-content !important;
     max-width: 75%;
   }
 
@@ -1203,6 +1203,7 @@ div.form-child {
 
   .multi-post-image > img {
     background-size: contain;
+
     /* width: 100%; */
     max-height: 512px;
     vertical-align: middle;
@@ -1283,6 +1284,7 @@ div.form-child {
 
   .see-project-outer-generic {
     opacity: 0;
+
     /* min-width: 369px; */
   }
 
