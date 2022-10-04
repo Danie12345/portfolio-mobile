@@ -11,6 +11,17 @@ const cardsArr = [
     },
   },
   {
+    name: 'leaderboard',
+    image: 'Icons/leaderboard.png',
+    bgimage: 'Icons/leaderboard-bg.png',
+    title: 'Leaderboard',
+    text: 'Simple leaderboard score displaying site using ES6 and API calls!',
+    buttons: {
+      langs: ['HTML', 'CSS', 'JavaScript'],
+      other: [['See Live', 'https://danie12345.github.io/leaderboard/dist/', 'Icons/see-project-icon.svg'], ['See Source', 'https://github.com/Danie12345/leaderboard', 'Icons/source-icon.svg']],
+    },
+  },
+  {
     name: 'recipe-app',
     image: 'Icons/recipe-app.png',
     bgimage: 'Icons/recipe-app-bg.png',
@@ -19,6 +30,17 @@ const cardsArr = [
     buttons: {
       langs: ['HTML', 'CSS', 'JavaScript'],
       other: [['See Live', 'https://anagudelogu.github.io/capstone-two/dist/', 'Icons/see-project-icon.svg'], ['See Source', 'https://github.com/anagudelogu/capstone-two', 'Icons/source-icon.svg']],
+    },
+  },
+  {
+    name: 'bookstore-cms',
+    image: 'Icons/bookstore-cms.png',
+    bgimage: 'Icons/bookstore-cms-bg.png',
+    title: 'Bookstore CMS',
+    text: 'Small website that (fake) manages an online bookstore using React-Redux!',
+    buttons: {
+      langs: ['HTML', 'CSS', 'React-Redux'],
+      other: [['See Live', 'https://bookstore-cms-danielmalo.netlify.app/', 'Icons/see-project-icon.svg'], ['See Source', 'https://github.com/Danie12345/bookstore-react', 'Icons/source-icon.svg']],
     },
   },
   {

@@ -85,10 +85,11 @@ const popUpTemplate = (container, obj) => {
 
   const div2 = document.createElement('div');
   obj.buttons.other.forEach((btn) => {
-    const button = document.createElement('button');
+    const button = document.createElement('a');
     const [btnText, btnLink, btnIcon] = btn;
     const img = document.createElement('img');
     button.setAttribute('href', btnLink);
+    button.setAttribute('target', '_blank');
     img.setAttribute('src', btnIcon);
     button.innerHTML = btnText;
     button.appendChild(img);
