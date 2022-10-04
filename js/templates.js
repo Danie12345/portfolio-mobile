@@ -1,4 +1,3 @@
-/* eslint-disable no-script-url */
 const cardTemplate = (obj) => {
   const li = document.createElement('li');
   li.setAttribute('class', 'grid-item grid-item-generic');
@@ -22,7 +21,7 @@ const cardTemplate = (obj) => {
   obj.buttons.langs.forEach((btn) => {
     const li = document.createElement('li');
     li.setAttribute('class', 'language-btn btn-generic');
-    li.setAttribute('href', 'javascript:');
+    li.setAttribute('href', 'javascript:void(0)');
     li.innerText = btn;
     ul.appendChild(li);
   });
@@ -33,7 +32,7 @@ const cardTemplate = (obj) => {
 
   const a = document.createElement('a');
   a.setAttribute('class', 'see-project-outer-generic');
-  a.setAttribute('href', 'javascript:');
+  a.setAttribute('href', 'javascript:void(0)');
 
   const span = document.createElement('span');
   span.setAttribute('class', 'see-project open-project');
