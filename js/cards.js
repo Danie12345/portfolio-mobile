@@ -6,7 +6,7 @@ const cardsArr = [
     title: 'Microverse Capstone One',
     text: 'The first capstone project in the curriculum, though simple, it mimics the contents of a conference page.',
     buttons: {
-      langs: ['HTML5', 'CSS3'],
+      langs: ['HTML', 'CSS'],
       other: [['See Live', 'https://danie12345.github.io/capstone-one/', 'Icons/see-project-icon.svg'], ['See Source', 'https://github.com/Danie12345/capstone-one', 'Icons/source-icon.svg']],
     },
   },
@@ -17,7 +17,7 @@ const cardsArr = [
     title: 'Yummy Recipes!',
     text: 'Recipe webpage that has many meal categories and a lot of options for each one of them. Importing data from a real API and implementing an involvement system that allows the user to like each recipe and to add comments to them.',
     buttons: {
-      langs: ['HTML5', 'CSS3', 'JavaScript'],
+      langs: ['HTML', 'CSS', 'JavaScript'],
       other: [['See Live', 'https://anagudelogu.github.io/capstone-two/dist/', 'Icons/see-project-icon.svg'], ['See Source', 'https://github.com/anagudelogu/capstone-two', 'Icons/source-icon.svg']],
     },
   },
@@ -28,8 +28,19 @@ const cardsArr = [
     title: 'Air Pollution Ranks',
     text: 'This project consists of a webapp for mobile that displays real metrics from an API in single-page-app format. It uses React-Redux for all of the front-end features.',
     buttons: {
-      langs: ['HTML5', 'CSS3', 'React', 'Redux'],
+      langs: ['HTML', 'CSS', 'React-Redux'],
       other: [['See Live', 'https://strong-croquembouche-21dba9.netlify.app/', 'Icons/see-project-icon.svg'], ['See Source', 'https://github.com/Danie12345/metrics-webapp', 'Icons/source-icon.svg']],
+    },
+  },
+  {
+    name: 'final-capstone',
+    image: 'Icons/final-capstone.png',
+    bgimage: 'Icons/final-capstone-bg.png',
+    title: 'Book.it',
+    text: 'An app to rent your dream vintage vehicle. Utilizes React-Redux and Ruby on Rails.',
+    buttons: {
+      langs: ['React-Redux', 'Rails'],
+      other: [['See Live', 'https://bookit-fe.netlify.app/', 'Icons/see-project-icon.svg'], ['See Source', 'https://github.com/Danie12345/bookit-fe', 'Icons/source-icon.svg']],
     },
   },
 ].reverse();
