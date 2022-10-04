@@ -21,7 +21,7 @@ Download or clone the repository.
 Open files directly from the main directory.
 Alternatively, open a live server with said file.
 
-
+ 
 ## Author
 
 👤 *Daniel Malo*
