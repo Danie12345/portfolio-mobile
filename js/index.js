@@ -2,6 +2,7 @@ const burger = document.querySelector('.hamburger');
 const header = document.querySelector('.header');
 const navItems = document.querySelectorAll('.navitem2');
 const previewContainer = document.querySelector('.preview-container');
+const cards = document.getElementById('all-projects');
 
 burger.addEventListener('click', () => {
   header.classList.toggle('active');
@@ -77,6 +78,57 @@ const cardsArr = [
     },
   },
 ];
+
+const cardTemplate = (obj) => {
+  const li = document.createElement('li');
+  li.setAttribute('class', 'grid-item grid-item-generic');
+  li.setAttribute('data-name', obj.name);
+
+  const section = document.createElement('section');
+  section.setAttribute('class', 'project-info');
+
+  const h3 = document.createElement('h3');
+  h3.setAttribute('class', 'project-title');
+  h3.innerText = obj.title;
+
+  const p = document.createElement('p');
+  p.setAttribute('class', 'project-text');
+  p.innerText = obj.text;
+
+  const ul = document.createElement('ul');
+  ul.setAttribute('class', 'language-btns-container-generic');
+
+  obj.buttons.langs.forEach((btn) => {
+    const li = document.createElement('li');
+    li.setAttribute('class', 'language-btn btn-generic');
+    li.setAttribute('href', 'javascript:void(0)');
+    li.innerText = btn;
+    ul.appendChild(li);
+  });
+
+  section.appendChild(h3);
+  section.appendChild(p);
+  section.appendChild(ul);
+
+  const a = document.createElement('a');
+  a.setAttribute('class', 'see-project-outer-generic');
+  a.setAttribute('href', 'javascript:void(0)');
+
+  const span = document.createElement('span');
+  span.setAttribute('class', 'see-project open-project');
+  span.innerText = 'See Project';
+
+  a.appendChild(span);
+
+  li.appendChild(section);
+  li.appendChild(a);
+
+  return li;
+};
+
+cardsArr.forEach((card) => {
+  cards.appendChild(cardTemplate(card));
+});
 
 const template = (obj) => {
   const div = document.createElement('div');
