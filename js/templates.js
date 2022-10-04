@@ -13,7 +13,7 @@ const cardTemplate = (obj) => {
 
   const p = document.createElement('p');
   p.setAttribute('class', 'project-text');
-  p.innerText = obj.text;
+  p.innerText = obj.text.replace(/(.{100})..+/, "$1…");;
 
   const ul = document.createElement('ul');
   ul.setAttribute('class', 'language-btns-container-generic');
