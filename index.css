@@ -218,7 +218,6 @@ li {
   min-height: 386px;
   height: 386px;
   width: 327px;
-  background-image: url("Icons/img-placeholder2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1296,12 +1295,7 @@ div.form-child {
   }
 
   @keyframes redo-card {
-    from {
-      background-image: url("Icons/img-placeholder2.png");
-    }
-
     to {
-      background-image: url("Icons/img-placeholder2.1.png");
       border: 1px solid black;
     }
   }

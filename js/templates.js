@@ -1,6 +1,7 @@
 const cardTemplate = (obj) => {
   const li = document.createElement('li');
   li.setAttribute('class', 'grid-item grid-item-generic');
+  li.style.backgroundImage = `url(${obj.bgimage})`;
   li.setAttribute('data-name', obj.name);
 
   const section = document.createElement('section');
