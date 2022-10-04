@@ -1,5 +1,5 @@
-import cardsArr from "./cards.js";
-import { cardTemplate, popUpTemplate } from "./templates.js";
+import cardsArr from './cards.js';
+import { cardTemplate, popUpTemplate } from './templates.js';
 
 const burger = document.querySelector('.hamburger');
 const header = document.querySelector('.header');
